@@ -31,14 +31,14 @@ public class gameCharacters {
         hp = h;
     }
     public gameCharacters(String name) {
-        if (name.equals("demo")) {
-            hp = 50;
-            gp = 40;
-        }
         this.name = name;
         hp = (int) (Math.random() * 41 + 10);
         gp = (int) (Math.random() * 50 + 1);
         alive = true;
+        if (name.equals("demo")) {
+            hp = 50;
+            gp = 40;
+        }
     }
 
     public void infoCharacter() {
